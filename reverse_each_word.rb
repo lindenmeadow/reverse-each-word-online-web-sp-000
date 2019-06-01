@@ -5,4 +5,8 @@ def reverse_each_word(string)
     revd << word.reverse
   end
   revd.join(" ")
+  string.collect do|word|
+    revd << word.reverse
+  end
+  revd.join(" ")
 end
